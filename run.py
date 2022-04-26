@@ -7,5 +7,6 @@ if __name__ == '__main__':
 
 # This provides shell context to allow testing: will not be required for deployment 
 @app.shell_context_processor
+
 def make_shell_context():
     return {'db': db, 'AppUser': AppUser}
